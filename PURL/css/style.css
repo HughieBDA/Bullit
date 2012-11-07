@@ -1,0 +1,182 @@
+html { 
+	background: url(../img/bg.jpg) no-repeat top center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+#container {
+	margin: 0 auto;
+	width: 980px;
+}
+
+header {
+	background: #ffffff;
+}
+
+#logo {
+	float: right;
+	margin: 20px;
+}
+
+nav {
+	background: #2e2e2e;
+	clear: both;
+}
+
+	nav ul {
+		padding: 0 0 0 20px;
+		margin: 0;
+	}
+
+	nav li {
+		display: inline;
+		font-size: 16px;
+		line-height: 40px;
+		margin-right: 45px;
+		text-transform: uppercase;
+	}
+	
+	nav a,
+	nav a:hover,
+	nav a:visited {
+		color: #ffffff;
+		text-decoration: none;
+	}
+	
+	nav a.on {
+		color: #fdc600;
+	}
+
+#knockdunkfreeze {
+	margin: 50px;
+}
+
+#content {
+	background: #ffffff;
+	padding-top: 10px;
+}
+
+#col-left a,
+#col-left a:hover,
+#col-left a:visited {
+	color: #2e2e2e;
+	font-weight: bold;
+}
+
+#col-left a.link-stockist,
+#col-left a.link-stockist:hover,
+#col-left a.link-stockist:visited {
+	color: #fdc600;
+}
+
+#col-left {
+	float: left;
+	margin-left: 35px;
+	width: 425px;
+}
+
+#col-right {
+	float: right;
+	margin-right: 35px;
+	width: 465px;
+}
+
+#phones {
+	margin-top: -205px;
+}
+
+select {
+	-webkit-appearance: button;
+	-webkit-border-radius: 0;
+	-webkit-padding-end: 2em;
+	-webkit-padding-start: 0.75em;
+	-webkit-user-select: none;
+	background-color: #cccccc;
+	background-image: url(../img/arrow.png);
+	background-position: 97.5% center;
+	background-repeat: no-repeat;
+	border: none;
+	color: #2e2e2e;
+	font-weight: bold;
+	margin: 0;
+	overflow: hidden;
+	padding-top: 0.75em;
+	padding-bottom: 0.75em;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 95%;
+}
+
+input[type=submit] {
+	background: #ffc50c;
+	border: none;
+	float: right;
+	font-weight: bold;
+	margin: 1em 5% 1em 0;
+	padding: 0.5em 1.5em;
+	text-transform: uppercase;
+}
+
+.button {
+	background: #2e2e2e;
+	color: #ffc50c;
+	border: none;
+	float: right;
+	margin: 1em 1em 1em 0;
+	padding: 0.5em 1.5em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#b10,
+#b25 {
+	text-align: center;
+	width: 48%;
+}
+
+#b10 {
+	float: left;
+}
+
+#b25 {
+	float: right;
+}
+
+#b10 img,
+#b25 img {
+	margin-left: 1.5em;
+}
+
+#buckets {
+	background: #d3d5d3;
+	padding: 20px 10px;
+}
+
+#buckets>div {
+	float: left;
+	margin: 0 10px;
+	width: 300px;
+}
+
+footer {
+	background: #2e2e2e;
+	color: #999999;
+	padding: 20px 40px;
+}
+
+footer p {
+	font-size: 0.75em;
+	margin-right: 380px;
+}
+
+footer img {
+	float: left;
+	margin-bottom: 50px;
+	margin-right: 40px;
+}
