@@ -12,3 +12,4 @@ if (!(window.console && console.log)) {
 }
 
 // Place any jQuery/helper plugins in here.
+document.write('<script src="/js/jquery.selectbox-0.2.min.js"><\/script>')

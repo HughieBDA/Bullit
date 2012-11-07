@@ -30,6 +30,7 @@ record_visit($user->get('id'));
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/jquery.selectbox.css">
         <script src="/js/vendor/modernizr-2.6.1.min.js"></script>
     </head>
     <body>
