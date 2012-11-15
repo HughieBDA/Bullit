@@ -162,6 +162,20 @@ input[type=submit] {
 	float: left;
 	margin: 0 10px;
 	width: 300px;
+	height:159px;
+	overflow:hidden;
+}
+
+#knockit {
+	background:url(../img/knock-it.jpg) 0 0 no-repeat;
+}
+
+#dunkit {
+	background:url(../img/dunk-it.jpg) 0 0 no-repeat;
+}
+
+#freezeit {
+	background:url(../img/freeze-it.jpg) 0 0 no-repeat;
 }
 
 footer {

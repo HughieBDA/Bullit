@@ -46,9 +46,9 @@ record_visit($user->get('id'));
         		
         		<nav>
         			<ul>
-        				<li><a href="" class="on">Home</a></li>
-        				<li><a href="">Catphones.com</a></li>
-        				<li><a href="">Support</a></li>
+        				<li><a href="<?php echo $_SERVER['REQUEST_URI']; ?>" class="on">Home</a></li>
+        				<li><a href="http://catphones.com">Catphones.com</a></li>
+        				<li><a href="http://catphones.com/support.php">Support</a></li>
         			</ul>
         		</nav>
         		
@@ -62,7 +62,7 @@ record_visit($user->get('id'));
         	
         		<div id="col-left">
         			
-        			<h2>Thanks for your interest in Cat&reg; phones. We're sorry to say the world's most rugged phones aren't available in [country] right now.</h2>
+        			<h2>Thanks for your interest in Cat&reg; phones. In [country] our phones are currently available in</h2>
         			
         			<p>
         				<a href="" class="link-stockist">Stockist Name One</a><br />
@@ -82,7 +82,7 @@ record_visit($user->get('id'));
         				<p>
         					<img src="/img/icons-b10.png" alt="icons-b10" width="153" height="32">
         					<br />
-        					<a href="" class="button">Find out more</a>
+        					<a href="http://catphones.com/b10.php" class="button">Find out more</a>
         				</p>
         			</div>
         			
@@ -90,7 +90,7 @@ record_visit($user->get('id'));
         				<p>
         					<img src="/img/icons-b25.png" alt="icons-b25" width="117" height="32">
         					<br />
-        					<a href="" class="button">Find out more</a>
+        					<a href="http://catphones.com/b25.php" class="button">Find out more</a>
         				</p>
         			</div>
         			
@@ -101,15 +101,15 @@ record_visit($user->get('id'));
         	<section id="buckets" class="clearfix">
         		
         		<div id="knockit">
-        			<img src="/img/knockit.jpg" alt="knockit" width="300" height="159">
+        			<img src="/img/knock-it-on.jpg" alt="knockit" />
         		</div>
         		
         		<div id="dunkit">
-        			<img src="/img/dunkit.jpg" alt="dunkit" width="300" height="159">
+        			<img src="/img/dunk-it-on.jpg" alt="dunkit" />
         		</div>
         		
         		<div id="freezeit">
-        			<img src="/img/freezeit.jpg" alt="freezeit" width="300" height="159">
+        			<img src="/img/freeze-it-on.jpg" alt="freezeit" />
         		</div>
         		
         	</section>
