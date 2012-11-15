@@ -1,16 +1,29 @@
 <?php
 
+session_start();
+
 require_once('db.conf.php');
 require_once('db.class.php');
 require_once('lib.php');
 
-$purl = iss($_GET['p'],'');
-$user = get_user($purl);
+$user = null;
+if(isset($_GET['p']) and !empty($_GET['p'])){
+	$_SESSION['purl'] = $_GET['p'];
+	header('Location: '.str_replace($_GET['p'], '', $_SERVER['REQUEST_URI']));
+	exit;
+}
+
+if(isset($_SESSION['purl'])){
+	$user = get_user($_SESSION['purl']);
+}
+
 if($user==null){
 	exit;
 }
 
 record_visit($user->get('id'));
+
+print_r($user);
 
 ?>
 <!DOCTYPE html>
@@ -62,7 +75,7 @@ record_visit($user->get('id'));
         	
         		<div id="col-left">
         			
-        			<h2>Thanks for your interest in Cat&reg; phones. In [country] our phones are currently available in</h2>
+        			<h2>Thanks for your interest in Cat<sup>&reg;</sup> phones. In <?php echo (in_array($user->get('country'), $the_countries) ? 'the ' : '').$user->get('country'); ?> our phones are currently available in</h2>
         			
         			<p>
         				<a href="" class="link-stockist">Stockist Name One</a><br />
@@ -115,7 +128,7 @@ record_visit($user->get('id'));
         	</section>
         	
         	<footer class="clearfix">
-        		<p><img src="/img/logo-footer.png" alt="logo-footer" width="61" height="61">&copy; 2012 Caterpillar / CAT, CATERPILLAR, their respective logos, “Caterpillar Yellow,” “Caterpillar Corporate Yellow,” as well as corporate and product identity used herein, are trademarks of Caterpillar and may not be used without permission. Third-party trademarks are the property of their respective owners.  Bullitt Mobile Ltd is a licensee of Caterpillar, Inc. [your company name here] is a licensed distributor of Bullitt Mobile Ltd.</p
+        		<p><img src="/img/logo-footer.png" alt="logo-footer" width="61" height="61">&copy; 2012 Caterpillar / CAT, CATERPILLAR, their respective logos, “Caterpillar Yellow,” “Caterpillar Corporate Yellow,” as well as corporate and product identity used herein, are trademarks of Caterpillar and may not be used without permission. Third-party trademarks are the property of their respective owners.  Bullitt Mobile Ltd is a licensee of Caterpillar, Inc.</p
         	</footer>
         	
         </div>

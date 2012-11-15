@@ -7,7 +7,7 @@ class User {
 	private $last_name;
 	private $email;
 	private $purl;
-	private $company;
+	private $country;
 	
 	function __construct($args) {
 		
@@ -16,12 +16,12 @@ class User {
 		$this->last_name = isset($args['last_name']) ? $args['last_name'] : "";
 		$this->email = isset($args['email']) ? $args['email'] : "";
 		$this->purl = isset($args['purl']) ? $args['purl'] : "";
-		$this->company = isset($args['company']) ? $args['company'] : "";
+		$this->country = isset($args['country']) ? $args['country'] : "";
 		
 	}
 	
 	public function get($key) {
-		return in_array($key,array("id","first_name","last_name","email","purl","company")) ? $this->$key : false;
+		return in_array($key,array("id","first_name","last_name","email","purl","country")) ? $this->$key : false;
 	}
 	
 }
