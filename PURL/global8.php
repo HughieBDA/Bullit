@@ -66,24 +66,21 @@ record_visit($user->get('id'));
         	</header>
         	
         	<section id="banner">
-        		<img src="/img/knock-dunk-freeze.png" alt="Knock it. Dunk it. Freeze it." width="168" height="173" id="knockdunkfreeze">
+        		<img src="/img/fandfprogram.png" alt="Cat&reg; Phones' Friends and Family Program" width="376" height="177" id="catfandfprogram">
         	</section>
         	
         	<section id="content" class="clearfix">
         	
         		<div id="col-left">
+        			        			
+        			<h3>Join the Cat<sup>&reg;</sup> Phones' Friends and Family Program for special Cat<sup>&reg;</sup> phone deals and services. </h3>
         			
-        			<h2>Thanks for your interest in Cat<sup>&reg;</sup> phones. In <?php echo (in_array($user->get('country'), $the_countries) ? 'the ' : '').$user->get('country'); ?> our phones are currently available in</h2>
         			
-        			<p>
-        				<a href="" class="link-stockist">Stockist Name One</a><br />
-        				<a href="" class="link-stockist">Second Stockist Name</a><br />
-        				<a href="" class="link-stockist">Stockist Name Number Three</a><br />
-        				<a href="" class="link-stockist">Stockist Name Four</a><br />
-        				<a href="" class="link-stockist">Stockist Name</a><br />
-        				<a href="" class="link-stockist">Sixth Stockist Name</a><br />
-        				<a href="" class="link-stockist">Stockist Name Seven</a>
-        			</p>        			
+        			<p>Purchase a Cat<sup>&reg;</sup> phone from one of the dealers listed below we'll make sure you also receive a car charger at no extra cost to you. It's simple, just enter the code [code] when you're asked to claim your gift with purchase.</p> 
+				<p>Can't decide between the compact and functional <a href="http://catphones.com/b25.php">Cat<sup>&reg;</sup> B25</a> or the Android-powered <a href="http://catphones.com/b10.php">Cat<sup>&reg;</sup> B10</a>? Check out our new <a href="http://catphones.com">website</a> to review both phones' specs and user manuals.</p> 
+				<p>To order, visit one of the retailers below:</p> 
+				<p>[variable data]</p> 
+        			
         		</div>
         		
         		<div id="col-right">
@@ -106,6 +103,12 @@ record_visit($user->get('id'));
         			</div>
         			
         		</div>
+        	</section>
+        	
+        	<section id="subcontent" class="clearfix">        		
+        		<div class="col-fullwidth">
+				<p>All Cat<sup>&reg;</sup> Phones are currently sold unlocked and can be used on any GSM network operating in the country it was purchased.</p>
+        			<h4>In the meantime discover more.</h4>
         		
         	</section>
         	
@@ -144,6 +147,4 @@ record_visit($user->get('id'));
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
     </body>
-</html>
- </body>
 </html>

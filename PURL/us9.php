@@ -66,24 +66,17 @@ record_visit($user->get('id'));
         	</header>
         	
         	<section id="banner">
-        		<img src="/img/knock-dunk-freeze.png" alt="Knock it. Dunk it. Freeze it." width="168" height="173" id="knockdunkfreeze">
+        		<img src="/img/fandfprogram.png" alt="Cat&reg; Phones' Friends and Family Program" width="376" height="177" id="catfandfprogram">
         	</section>
         	
         	<section id="content" class="clearfix">
         	
-        		<div id="col-left">
+        		<div id="col-left">        			
         			
-        			<h2>Thanks for your interest in Cat<sup>&reg;</sup> phones. In <?php echo (in_array($user->get('country'), $the_countries) ? 'the ' : '').$user->get('country'); ?> our phones are currently available in</h2>
+        			<h3>Thank you for registering your interest in Cat<sup>&reg;</sup> Phones.</h3>
+				<p>At this time we aren't quite ready to launch the phones in the country where you live, but we hope to have everything set up by the end of [variable data]. As a Cat<sup>&reg;</sup> Phones Friends and Family Member, you'll be the first to know when they are available &ndash; we promise.</p>
+				<p>To help you prepare to purchase, we've improved our <a href="http://catphones.com">website</a>, so if you can't decide between the compact and functional <a href="http://catphones.com/b25.php">Cat<sup>&reg;</sup> B25</a> or the Android&#8209;powered <a href="http://catphones.com/b10.php">Cat<sup>&reg;</sup> B10</a> check it our to review both phones' specs and user manuals.</p>
         			
-        			<p>
-        				<a href="" class="link-stockist">Stockist Name One</a><br />
-        				<a href="" class="link-stockist">Second Stockist Name</a><br />
-        				<a href="" class="link-stockist">Stockist Name Number Three</a><br />
-        				<a href="" class="link-stockist">Stockist Name Four</a><br />
-        				<a href="" class="link-stockist">Stockist Name</a><br />
-        				<a href="" class="link-stockist">Sixth Stockist Name</a><br />
-        				<a href="" class="link-stockist">Stockist Name Seven</a>
-        			</p>        			
         		</div>
         		
         		<div id="col-right">
@@ -106,6 +99,13 @@ record_visit($user->get('id'));
         			</div>
         			
         		</div>
+        		
+        	</section>
+        	
+        	<section id="subcontent" class="clearfix">        		
+        		<div class="col-fullwidth">
+				<p>All Cat<sup>&reg;</sup> Phones are currently sold unlocked, but it's important to remember that both Cat<sup>&reg;</sup> phones only operate on GSM networks like AT&amp;T and T&#8209;Mobile and not on CDMA networks like Verizon. If you're not sure what type of network your carrier operates, give them a call before you buy.</p>
+        			<h4>In the meantime discover more.</h4>
         		
         	</section>
         	
@@ -144,6 +144,4 @@ record_visit($user->get('id'));
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
     </body>
-</html>
- </body>
 </html>

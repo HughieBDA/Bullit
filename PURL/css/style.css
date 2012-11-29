@@ -53,14 +53,18 @@ nav {
 		color: #fdc600;
 	}
 
-#knockdunkfreeze {
+#knockdunkfreeze, #catfandfprogram {
 	margin: 50px;
 }
 
-#content {
+#content, #subcontent {
 	background: #ffffff;
 	padding-top: 10px;
 }
+
+	#subcontent p {
+		font-size: 90%
+	}
 
 #col-left a,
 #col-left a:hover,
@@ -86,7 +90,10 @@ nav {
 	margin-right: 35px;
 	width: 465px;
 }
-
+.col-fullwidth {
+	margin: 0 35px;
+	width: 890px;
+}
 #phones {
 	margin-top: -205px;
 }
