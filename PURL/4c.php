@@ -74,15 +74,17 @@ record_visit($user->get('id'));
         		<div id="col-left">
         			
         			<h2>Thanks for your interest in Cat<sup>&reg;</sup> phones. In <?php echo (in_array($user->get('country'), $the_countries) ? 'the ' : '').$user->get('country'); ?> our phones are currently available in</h2>
-        			
-        			<p>
-        				<a href="" class="link-stockist">Stockist Name One</a><br />
-        				<a href="" class="link-stockist">Second Stockist Name</a><br />
-        				<a href="" class="link-stockist">Stockist Name Number Three</a><br />
-        				<a href="" class="link-stockist">Stockist Name Four</a><br />
-        				<a href="" class="link-stockist">Stockist Name</a><br />
-        				<a href="" class="link-stockist">Sixth Stockist Name</a><br />
-        				<a href="" class="link-stockist">Stockist Name Seven</a>
+
+                    <p>
+                        <?php
+
+                        $retailers = get_retailers($user->get('country'));
+
+                        foreach($retailers as $retailer){
+                            echo '<a href="'.$retailer->website.'" target="_blank">'.$retailer->retailer.'</a><br />';
+                        }
+
+                        ?>
         			</p>        			
         		</div>
         		

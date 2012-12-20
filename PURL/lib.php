@@ -73,6 +73,13 @@ function get_user($purl) {
 	}
 }
 
+function get_retailers($country=''){
+	global $db;
+	$db->query('SELECT * FROM retailer WHERE country=\''.$country.'\' AND website != \'\' GROUP BY retailer ORDER BY retailer ASC');
+	$rows = $db->getRowList();
+	return $rows;
+}
+
 function record_visit($user) {
 		
 	global $db;

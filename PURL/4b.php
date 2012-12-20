@@ -23,7 +23,11 @@ if($user==null){
 
 if(isset($_POST['country'])){
 	update_user($_SESSION['purl'], array('country' => $_POST['country']));
-	header('Location: /4c/');
+	if(count(get_retailers($_POST['country'])) > 0){
+		header('Location: /4c/');
+	}else{
+		header('Location: /4d/');
+	}
 	exit;
 }
 

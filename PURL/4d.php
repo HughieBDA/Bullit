@@ -73,13 +73,13 @@ record_visit($user->get('id'));
         	
         		<div id="col-left">
         			
-        			<h2>Thanks for your interest in Cat<sup>&reg;</sup> phones. We're sorry to say the world's most rugged phones aren't available in [country] right now.</h2>
+        			<h2>Thanks for your interest in Cat<sup>&reg;</sup> phones. We're sorry to say the world's most rugged phones aren't available in <?php echo (in_array($user->get('country'), $the_countries) ? 'the ' : '').$user->get('country'); ?> right now.</h2>
         			
         			<h3>We're working hard to change this, and will be in touch with more news soon.</h3>
         			
         			<h4>In the meantime discover more.</h4>
         			
-        			<p>See the Cat<sup>&reg;</sup> phone story unfold on our <a href="">new website</a> and get a glimpse of the cutting edge <a href="">Cat<sup>&reg;</sup> B10</a> smartphone and ultra-compact <a href="">Cat&reg; B25</a>.</p>
+        			<p>See the Cat<sup>&reg;</sup> phone story unfold on our <a href="http://catphones.com/" target="_blank">new website</a> and get a glimpse of the cutting edge <a href="http://catphones.com/b10.php" target="_blank">Cat<sup>&reg;</sup> B10</a> smartphone and ultra-compact <a href="http://catphones.com/b25.php" target="_blank">Cat&reg; B25</a>.</p>
         			
         		</div>
         		
